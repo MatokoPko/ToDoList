@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
     $conn = mysqli_connect("localhost", "root", "root", "stranka");
     if(!$conn){
         echo "nepodarilo sa pripojit" . mysqli_connect_error();
@@ -30,7 +28,7 @@
         <input type="password" name="passcheck" placeholder="Password znovu">
         <button type="submit" name="register">Registruj Sa</button>
         <a href="index.php">Prihlásiť sa</a>
-        <a href="#">Zabudol som heslo</a>
+        <a href="zabudh.php">Zabudol som heslo</a>
     </form>
 </body>
 </html>

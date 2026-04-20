@@ -5,18 +5,18 @@
     if(!$conn){
         echo "nepodarilo sa pripojit" . mysqli_connect_error();
     }
-    if(isset($_POST['login'])) {
+    if(isset($_POST['poslat'])) {
         $username = $_POST['username'];
-        $password = $_POST['password'];
-        $sql = "SELECT * FROM user WHERE username = '$username'";
+        $sql = "SELECT password FROM user WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)){
-            if ($row["username"] == $username && $password == $row["password"]){
-                $_SESSION["user"] = $row["user_ID"];
-                header("Location: main.php");
+            if ($row["password"] != null){
+                echo "Tvoje heslo je: " . $row["password"];
+            } else {
+                echo "Neexistuje uživatel s tímto menom";
             }
         }
-    }
+    }   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,10 +28,9 @@
 <body>
     <form method="post">
         <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <button type="submit" name="login">Prihlásiť sa</button>
+        <button type="submit" name="poslat">Poslať heslo</button>
         <a href="registracia.php">Registruj sa</a>
-        <a href="zabudh.php">Zabudol som heslo</a>
+        <a href="index.php">Prihlásiť sa</a>
     </form>
 </body>
 </html>
