@@ -1,6 +1,8 @@
 <?php
     session_start();
 
+    $_SESSION["user"] = null;
+
     $conn = mysqli_connect("localhost", "root", "root", "stranka");
     if(!$conn){
         echo "nepodarilo sa pripojit" . mysqli_connect_error();
