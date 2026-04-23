@@ -5,6 +5,7 @@
     if(!$conn){
         echo "nepodarilo sa pripojit" . mysqli_connect_error();
     }
+    
     if(isset($_POST['login'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -27,8 +28,8 @@
 </head>
 <body>
     <form method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <button type="submit" name="login">Prihlásiť sa</button>
         <a href="registracia.php">Registruj sa</a>
         <a href="zabudh.php">Zabudol som heslo</a>

@@ -23,9 +23,9 @@
 </head>
 <body>
     <form method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="passcheck" placeholder="Password znovu">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="passcheck" placeholder="Password znovu" required>
         <button type="submit" name="register">Registruj Sa</button>
         <a href="index.php">Prihlásiť sa</a>
         <a href="zabudh.php">Zabudol som heslo</a>
