@@ -13,7 +13,7 @@
             if ($row["password"] != null){
                 echo "Tvoje heslo je: " . $row["password"];
             } else {
-                echo "Neexistuje uživatel s tímto menom";
+                echo "Neexistuje uĹľivatel s tĂ­mto menom";
             }
         }
     }   
@@ -28,8 +28,8 @@
 <body>
     <form method="post">
         <input type="text" name="username" placeholder="Username" required>
-        <button type="submit" name="poslat">Poslať heslo</button>
-        <a href="registracia.php">Registruj sa</a>
+        <button type="submit" name="poslat">Poslať heslo</button><br>
+        <a href="registracia.php">Registruj sa</a><br>  
         <a href="index.php">Prihlásiť sa</a>
     </form>
 </body>

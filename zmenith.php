@@ -19,7 +19,7 @@
                 }
             }
         } else {
-            echo "Nové heslo se neshoduje";
+            echo "NovĂ© heslo se neshoduje";
         }
     }
 ?>
@@ -36,8 +36,8 @@
         <input type="password" name="spassword" placeholder="Staré heslo" required>
         <input type="password" name="npassword" placeholder="Nové heslo" required>
         <input type="password" name="npasscheck" placeholder="Nové heslo znovu" required>
-        <button type="submit" name="zmenit">Zmeniť heslo</button>
-        <a href="index.php">Prihlásiť sa</a>
+        <button type="submit" name="zmenit">Zmeniť heslo</button><br>
+        <a href="index.php">Prihlásiť sa</a><br>
         <a href="zabudh.php">Zabudol som heslo</a>
     </form>
 </body>

@@ -32,9 +32,11 @@
     <form method="post">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" name="login">Prihlásiť sa</button>
-        <a href="registracia.php">Registruj sa</a>
+        <button type="submit" name="login">Prihlásiť sa</button><br>
+        <a href="registracia.php">Registruj sa</a><br>
         <a href="zabudh.php">Zabudol som heslo</a>
     </form>
 </body>
+</html>
+</html>
 </html>

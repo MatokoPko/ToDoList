@@ -68,7 +68,7 @@
                 $result = mysqli_query($conn, $sql);
                 while ($row = mysqli_fetch_assoc($result)){
                     echo "<div style='border: 1px solid black; margin: 10px; padding: 10px;'>";
-                    echo "<h3>č. Úlohy: " . $row["task_ID"] . "</h3>";
+                    echo "<h3>č. úlohy: " . $row["task_ID"] . "</h3>";
                     echo "<h3>Názov: " . $row["nazov"] . "</h3>";
                     echo "<p>Popis: " . $row["popis"] . "</p>";
                     echo "<p>Datum: " . $row["datum"] . "</p>";
@@ -82,7 +82,7 @@
                 <div>
                     <h3>Zmena úlohy</h3>
                     <form method="post">
-                        <input type="text" name="ztask_ID" placeholder="č. Úlohy" required><br>
+                        <input type="text" name="ztask_ID" placeholder="ID úlohy" required><br>
                         <input type="text" name="znazov" placeholder="Názov úlohy"><br>
                         <textarea name="zpopis" placeholder="Popis úlohy"></textarea><br>
                         <input type="date" name="zdatum"><br>
